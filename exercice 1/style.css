@@ -1,0 +1,46 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+} */
+
+/* header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+.title {
+  grid-area: title;
+}
+article {
+}
+footer {
+  grid-area: footer;
+} */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+}
+
+.wrapper div {
+  background-color: aqua;
+  border: 2px solid black;
+}
+
+.wrapper > div {
+  background-color: brown;
+  padding: 1em;
+}
+
+.wrapper > div:nth-child(odd) {
+  background-color: chartreuse;
+  padding: 1em;
+}
