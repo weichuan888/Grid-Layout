@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows: minmax(auto, auto);
+  margin: 1%;
+}
+div {
+  display: grid;
+}
+
+.wrapper > div {
+  background-color: cadetblue;
+  padding: 1em;
+  border: 2px solid black;
+}
+h1 {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(auto, auto);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
